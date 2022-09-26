@@ -1,0 +1,74 @@
+{
+  "rooms": [
+    {
+      "moveOutDate": "Jan 01, 2020",
+      "id": 84541,
+      "address": "2623 Honeysuckle Rd. NW",
+      "room": 3,
+      "location": "Atlanta, GA",
+      "lastOccupant": "Melissa Banks",
+      "uid": 98147,
+      "balance": 1612.70
+    },
+    {
+      "moveOutDate": "Jan 12, 2020",
+      "id": 48462,
+      "address": "9897 Colonial Ave.",
+      "room": 2,
+      "location": " Decatur, GA ",
+      "lastOccupant": "Frankie Vox",
+      "uid": 86170,
+      "balance": 200.00
+    },
+    {
+      "moveOutDate": "Jan 18, 2020",
+      "id": 12341,
+      "address": "1822 Riverside Dr. SW",
+      "room": 6,
+      "location": "Atlanta, GA",
+      "lastOccupant": "Harry Rutherford",
+      "uid": 90669,
+      "balance": 405.90
+    },
+    {
+      "moveOutDate": "Jan 18, 2020",
+      "id": 30970,
+      "address": "990 Garden St.",
+      "room": 4,
+      "location": "Decatur, GA",
+      "lastOccupant": "Clarke Brast",
+      "uid": 36200,
+      "balance": 371.00
+    },
+    {
+      "moveOutDate": "Jan 18, 2020",
+      "id": 41185,
+      "address": "3548 Moose Rd. NE Apt 90",
+      "room": 1,
+      "location": "Buckhead, GA",
+      "lastOccupant": "Eric Van",
+      "uid": 90121,
+      "balance": 1362.40
+    },
+    {
+      "moveOutDate": "Jan 01, 2020",
+      "id": 70807,
+      "address": "7659 Brookfield Ave.",
+      "room": 5,
+      "location": "Morrow, GA",
+      "lastOccupant": "Jerry Tallah",
+      "uid": 36174,
+      "balance": 839.12
+    },
+    {
+      "moveOutDate": "Feb 02, 2020",
+      "id": 15722,
+      "address": "390 Washington Rd.",
+      "room": 3,
+      "location": "Atlanta, GA",
+      "lastOccupant": "Olivia Darks",
+      "uid": 22923,
+      "balance": 413.45
+    }
+  ]
+}

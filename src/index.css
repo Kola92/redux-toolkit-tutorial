@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+nav {
+  background-color: #3b03ab;
+  height: 70px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+nav > div {
+  width: 850px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-self: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.create-btn {
+  padding: 1rem 2rem;
+  background: #4aa6d9;
+  border-radius: 10px;
+}
+
+main {
+  width: 850px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  margin: 2.5rem 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+main h3 {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
+.text-blue {
+  color: #1976d2;
+}
+
+.create-post .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -5rem;
+}
+
+.create-heading {
+  background-color: #3b03ab;
+  color: white;
+  height: 70px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.create-heading h1 {
+  text-align: center;
+  margin: 0;
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+
+.form-container h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+textarea {
+  resize: none;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.form-group input,
+.form-group textarea {
+  margin-bottom: 1.3rem;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.4rem;
+}
+
+.form-group input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  padding: 1rem;
+  height: 200px;
+}
+
+.form-group button {
+  padding: 1rem 2rem;
+  background: #4aa6d9;
+  border-radius: 10px;
+  font: 700 1.4rem 'Inconsolata', monospace;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3b03ab;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 70%;
+  right: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
