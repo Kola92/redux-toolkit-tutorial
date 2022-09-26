@@ -33,16 +33,9 @@ export const addPost = createAsyncThunk(
 const postsSlice = createSlice({
   name: 'posts',
   initialState,
-  reducers: {
-    // addPost: (state, action) => {
-    //   state.postItems.push(action.payload)
-    // },
-    removePost: (state, action) => {
-      state.postItems = state.postItems.filter(
-        (post) => post.id !== action.payload
-      )
-    },
-  },
+  // Add reducers for the synchronous actions on the UI
+  reducers: {},
+  // Add extra reducers for the asynchronous actions on the UI 
   extraReducers: {
     [getPosts.pending]: (state, action) => {
       // When data is being fetched
