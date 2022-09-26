@@ -31,7 +31,11 @@ export const addPost = createAsyncThunk(
 )
 
 const postsSlice = createSlice({
+  /* The name of the slice[this will also be used as the action type string 
+    in combination with the extraReducer name i.e posts/getPosts or posts/addPost] 
+  */
   name: 'posts',
+  // initialState: initialState[ES6 destructuring syntax]
   initialState,
   // Add reducers for the synchronous actions on the UI
   reducers: {},
