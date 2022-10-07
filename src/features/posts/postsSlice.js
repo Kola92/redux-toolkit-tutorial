@@ -9,17 +9,22 @@ const initialState = {
   error: null,
 }
 
+// Get all the posts from the API
 export const getPosts = createAsyncThunk('posts/getPosts', async (thunkAPI) => {
   try {
     const res = await axios.get(url)
     return res.data
   } catch (err) {
+    // console.error(err.message)
     return thunkAPI.rejectWithValue({ error: err.message })
   }
 })
 
+// Handle POST request to create a new post
 export const addPost = createAsyncThunk(
+  // The name of the action
   'posts/addPost',
+  // The payload creator
   async (initialPost, thunkAPI) => {
     try {
       const res = await axios.post(url, initialPost)
@@ -39,8 +44,8 @@ const postsSlice = createSlice({
   initialState,
   // Add reducers for the synchronous actions on the UI
   reducers: {},
-  // Add extra reducers for the asynchronous actions on the UI 
-  extraReducers: {
+  // Add extra reducers for the asynchronous actions on the UI
+  extraReducers: { 
     [getPosts.pending]: (state, action) => {
       // When data is being fetched
       state.status = 'loading'
@@ -57,14 +62,17 @@ const postsSlice = createSlice({
       state.status = 'failed'
 
       // Update the error message for proper error handling
-      state.error = action.error
+      state.error = action.error.message
+
+      console.error(state.error)
     },
     [addPost.fulfilled]: (state, action) => {
+      // Add the new post created on the UI to the existing posts
       state.postItems.push(action.payload)
     },
   },
 })
 
-export const { removePost } = postsSlice.actions
 
+// Export the reducer logic from the slice
 export default postsSlice.reducer
